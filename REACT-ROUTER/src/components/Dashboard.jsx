@@ -1,8 +1,12 @@
-import React from 'react'
+import { Link, Outlet } from 'react-router-dom'
 
 function Dashboard() {
   return (
-    <div>Dashboard</div>
+    <div>
+      Dashboard
+      <Link to="/dashboard/course">Courses</Link>
+      <Outlet/>
+    </div>
   )
 }
 

@@ -1,5 +1,5 @@
-import React from 'react'
-import { Link,NavLink } from 'react-router-dom'
+// import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import "../App.css"
 function Navbar() {
   return (
@@ -13,7 +13,7 @@ function Navbar() {
     // </div>
     //using Navlink, it contains isActive attribute which can  be used for styling
     <div>
-        <ul>
+        <ul className='ulist'>
             <li><NavLink to="/" className={({isActive})=>isActive? "active-link" :""}>Home</NavLink> </li>
             <li><NavLink to="/about" className={({isActive})=>isActive? "active-link" :""}>About</NavLink></li>
             <li><NavLink to="/dashboard" className={({isActive})=>isActive? "active-link" :""}>Dashboard</NavLink></li>
