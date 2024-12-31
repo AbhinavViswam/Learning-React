@@ -9,9 +9,10 @@ function App1() {
       }
   return (
     <div>
-        {num}
+        
         {calculation}
-        <button onClick={()=>{setNum(num+1)}}>click</button>
+        <input type="text" />
+        <button onClick={()=>{setNum()}}>click</button>
         <button onClick={addTodo}>ADD</button>
         <ul>
       {todo.map((todos,index)=>(
@@ -30,3 +31,5 @@ const calc=(num)=>{
 }
 
 export default App1
+
+//here when we add a new todo the whole page rerenders , if we dont use useMemo then the expensive calculation is recalculated. When we wrap it in useMemo, the state rerenders but since the result is same it is taken from the memo, and hence no recalculation required....
