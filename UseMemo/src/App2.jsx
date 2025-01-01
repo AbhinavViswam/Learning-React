@@ -8,7 +8,7 @@ function App2() {
     },[count])
   return (
     <>
-    count:{calculation}
+    Count:{calculation}
     Count1:{count1}
     <button onClick={()=>setCount(count+1)}>Count</button>
     <button onClick={()=>setCount1(count1+1)}>Count1</button>
